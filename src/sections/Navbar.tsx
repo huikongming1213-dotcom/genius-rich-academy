@@ -95,9 +95,8 @@ const Navbar = ({ scrollY }: NavbarProps) => {
                   }}
                   target={item.isExternal ? '_blank' : undefined}
                   rel={item.isExternal ? 'noopener noreferrer' : undefined}
-                  className="text-[#B3B3B3] hover:text-white transition-colors duration-300 text-sm font-medium relative group cursor-pointer flex items-center gap-1"
+                  className="text-[#B3B3B3] hover:text-white transition-colors duration-300 text-sm font-medium relative group cursor-pointer flex items-center"
                 >
-                  {item.icon && <item.icon size={14} />}
                   {item.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#9D00FF] transition-all duration-300 group-hover:w-full" />
                 </a>

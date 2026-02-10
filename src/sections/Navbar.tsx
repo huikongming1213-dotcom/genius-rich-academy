@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X, Search, MessageCircle, Instagram, Youtube, AtSign, Twitter, FileText } from 'lucide-react';
+import { Menu, X, Search, Instagram, Youtube, AtSign, Twitter, FileText } from 'lucide-react';;
 
 interface NavbarProps {
   scrollY: number;

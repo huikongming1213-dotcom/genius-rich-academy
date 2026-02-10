@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Instagram, Youtube, MessageCircle, Mail, AtSignIcon, Twitter } from 'lucide-react';
+import { Instagram, Youtube, AtSignIcon, Twitter } from 'lucide-react';;
 
 const Contact = () => {
   const sectionRef = useRef<HTMLDivElement>(null);

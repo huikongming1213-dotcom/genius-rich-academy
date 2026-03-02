@@ -165,6 +165,19 @@ const Testimonials = () => {
             ))}
           </div>
         </div>
+
+        {/* CTA after testimonials */}
+        <div className="text-center mt-14">
+          <p className="text-[#B3B3B3] text-lg mb-4">Ready to join them?</p>
+          <a
+            href="https://discord.com/invite/4shc4KT6W7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary inline-flex items-center gap-2"
+          >
+            Get Daily Watchlist →
+          </a>
+        </div>
       </div>
     </section>
   );

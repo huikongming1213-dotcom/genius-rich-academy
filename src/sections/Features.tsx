@@ -28,20 +28,23 @@ const Features = () => {
   const features = [
     {
       icon: TrendingUp,
-      title: '即時盤中分析',
-      description: '每日開盤期間專業分析師即時解盤，掌握每一個進出場時機。透過即時訊號與市場解讀，讓您不再錯過任何獲利機會。',
+      title: 'Daily Live Analysis',
+      description:
+        'Every morning before market open — watchlist breakdowns, key levels, and setups to watch. No guessing, just preparation.',
       color: '#9D00FF',
     },
     {
       icon: Shield,
-      title: '風險控管策略',
-      description: '學習專業止損與資金管理，保護本金同時最大化獲利潛能。完善的風險控管系統是長期獲利的關鍵。',
+      title: 'Risk Management First',
+      description:
+        'Position sizing, stop placement, and capital protection are taught before any entry strategy. Because surviving is winning.',
       color: '#FF6B00',
     },
     {
       icon: Users,
-      title: '專屬交易社群',
-      description: '加入活躍的交易員社群，與志同道合的夥伴交流策略與心得。在學習的路上，您永遠不會孤單。',
+      title: 'Active Trading Community',
+      description:
+        'Join a focused Discord with serious traders sharing setups, reviews, and accountability. No noise — only signal.',
       color: '#9D00FF',
     },
   ];
@@ -49,21 +52,21 @@ const Features = () => {
   return (
     <section id="features" ref={sectionRef} className="py-20 sm:py-32 relative">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 rounded-full bg-[#FF6B00]/20 border border-[#FF6B00]/50 text-[#FF6B00] text-sm font-medium mb-4">
-            課程特色
+            What You Get
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            為什麼選擇 <span className="text-[#9D00FF]">Genius Rich</span>
+            Why Traders Choose{' '}
+            <span className="text-[#9D00FF]">Genius Rich</span>
           </h2>
           <p className="text-[#B3B3B3] text-lg max-w-2xl mx-auto">
-            我們提供完整的交易教育體系，從基礎到進階，助您成為專業交易員
+            A complete trading education system — from watchlist to execution to review.
           </p>
         </div>
 
-        {/* Feature Cards */}
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-12">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -79,6 +82,18 @@ const Features = () => {
               <p className="text-[#B3B3B3] leading-relaxed">{feature.description}</p>
             </div>
           ))}
+        </div>
+
+        <div className="text-center">
+          <a
+            href="https://discord.com/invite/4shc4KT6W7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary inline-flex items-center gap-2"
+          >
+            Get Daily Watchlist →
+          </a>
+          <p className="text-[#B3B3B3]/60 text-sm mt-3">Free. No credit card required.</p>
         </div>
       </div>
     </section>

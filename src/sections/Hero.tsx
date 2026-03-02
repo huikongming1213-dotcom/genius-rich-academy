@@ -32,13 +32,13 @@ const Hero = () => {
         <img
           src="/hero-bg.jpg"
           alt="Background"
-          className="w-full h-full object-cover opacity-60"
+          className="w-full h-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/50 via-transparent to-[#0D0D0D]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/60 via-[#0D0D0D]/30 to-[#0D0D0D]" />
       </div>
 
       {/* Grid Overlay */}
-      <div className="absolute inset-0 grid-bg opacity-50 z-0" />
+      <div className="absolute inset-0 grid-bg opacity-40 z-0" />
 
       {/* Floating Particles */}
       <div className="absolute inset-0 z-0 overflow-hidden">
@@ -58,35 +58,49 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24">
+
         <div className="fade-in-element opacity-0">
-          <span className="inline-block px-4 py-2 rounded-full bg-[#9D00FF]/20 border border-[#9D00FF]/50 text-[#9D00FF] text-sm font-medium mb-6">
-            專業日內交易教育平台
+          <span className="inline-block px-4 py-2 rounded-full bg-[#9D00FF]/20 border border-[#9D00FF]/50 text-[#9D00FF] text-sm font-medium mb-8">
+            Professional Trading Education
           </span>
         </div>
 
-        <h1 className="fade-in-element opacity-0 animation-delay-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-          <span className="text-white">掌握日內交易</span>
+        {/* Identity Hook */}
+        <div className="fade-in-element opacity-0 animation-delay-200 mb-6">
+          <p className="text-xl sm:text-2xl text-[#B3B3B3] font-medium mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            Retail traders{' '}
+            <span className="line-through opacity-40">chase</span> the market.
+          </p>
+          <p className="text-xl sm:text-2xl text-white font-bold" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            Professional traders{' '}
+            <span className="text-[#9D00FF] neon-glow-purple">wait for</span> the market.
+          </p>
+        </div>
+
+        <h1 className="fade-in-element opacity-0 animation-delay-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+          <span className="text-gradient">Join 17,000+ Traders</span>
           <br />
-          <span className="text-gradient">創造財富自由</span>
+          <span className="text-white text-3xl sm:text-4xl md:text-5xl font-semibold">
+            Using Genius Watchlist
+          </span>
         </h1>
 
-        <p className="fade-in-element opacity-0 animation-delay-400 text-xl sm:text-2xl text-[#B3B3B3] mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-          Genius Rich Academy — 專業交易教育與即時社群支援
-        </p>
-
         <p className="fade-in-element opacity-0 animation-delay-400 text-base sm:text-lg text-[#B3B3B3]/80 max-w-2xl mx-auto mb-10">
-          從零基礎到專業交易員，我們提供完整的日內交易課程、即時盤中分析與高獲利策略教學。
+          Daily watchlists. Real setups. Professional mindset.
+          <br />
+          Stop chasing — start waiting for high-probability trades.
         </p>
 
-        <div className="fade-in-element opacity-0 animation-delay-600 flex flex-col sm:flex-row items-center justify-center gap-4">
+        {/* CTAs */}
+        <div className="fade-in-element opacity-0 animation-delay-600 flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdcjEKyvFWbaLdQDy24SP5qKZVbq0nyz8RS9HHZYe_4kqpKlw/viewform"
+            href="https://discord.com/invite/4shc4KT6W7"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary flex items-center gap-2 text-base"
           >
-            立即加入會員
+            Get Free Watchlist
             <ArrowRight size={20} />
           </a>
           <a
@@ -96,8 +110,24 @@ const Hero = () => {
             className="btn-secondary flex items-center gap-2 text-base"
           >
             <MessageCircle size={20} />
-            加入 Discord 免費群組
+            Join Discord Community
           </a>
+        </div>
+
+        {/* Mini social proof bar */}
+        <div className="fade-in-element opacity-0 animation-delay-600 flex flex-wrap items-center justify-center gap-6 text-sm text-[#B3B3B3]">
+          <span className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#9D00FF] inline-block" />
+            17,000+ Followers
+          </span>
+          <span className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#FF6B00] inline-block" />
+            1,300+ Watchlists Shared
+          </span>
+          <span className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-green-400 inline-block" />
+            Full-time Trader since 2019
+          </span>
         </div>
 
         {/* Scroll Indicator */}
